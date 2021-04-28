@@ -580,7 +580,7 @@ class PlayUtils(object):
 
             if stream_type == 'Audio':
 
-                track = "%s" % stream['DisplayTitle']
+                track = stream['DisplayTitle']
 
                 audio_streams[track] = index
 
@@ -593,7 +593,7 @@ class PlayUtils(object):
                     if not avail_for_extraction and not allow_burned_subs:
                         continue
 
-                track = "%s" % stream['DisplayTitle']
+                track = stream['DisplayTitle']
 
                 subs_streams[track] = index
 
